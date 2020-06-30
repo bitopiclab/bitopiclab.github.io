@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<html>
+	<head>
+		<title>联系我们 - 北理工光学成像与计算实验室</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<h1><a href="index.html" id="logo">北京理工大学 光学成像与计算实验室</a></h1>
+							<p>&nbsp;&nbsp;BIT OPTICAL IMAGING & COMPUTING LAB</p>
+						</div>
+					</div>
+		  </header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">首&nbsp;页</a></li>
+						<li><a href="news.html">组内新闻</a></li>
+						<li><a href="members.html">团队成员</a>
+  							<ul>
+								<li><a href="members.html">所有成员</a></li>
+                                <li><a href="wyt_personal.html">王涌天老师</a></li>
+								<li><a href="cdw_personal.html">程德文老师</a></li>
+								<li><a href="fzx_personal.html">冯泽心老师</a></li>
+                                <li><a href="yt_personal.html">杨通老师</a></li>
+							</ul>
+                        </li>
+						<li><a href="research.html">研究方向</a></li>
+						<li><a href="publications.html">论文专利</a></li> 
+                        <li><a href="facility.html">实验条件</a></li>                         
+                        <li><a href="teaching.html">教学工作</a></li>
+                        <li class="current"><a href="contact.html">联系我们</a></li>
+                        
+					</ul>
+		  </nav>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="content">
+
+									<!-- Content -->
+
+										<article class="box page-content">
+
+											<section>
+
+												<p>
+北京理工大光学成像与计算实验室每年都有2-3名博士研究生招生名额，6-7名硕士研究生招生名额，同时长期招收博士后研究人员。
+</p>
+<p>
+我们欢迎对光学设计、VR/AR、自由曲面光学、光电成像等方向感兴趣、有严谨求学和团队协作精神的你加入我们的团队。在这里你将会接触到平易近人的导师、和蔼可亲的前辈、先进的光学加工与测试平台、以及全套正版的光学设计与仿真软件。希望能和你一起开展光学设计与成像领域的理论与应用研究，不断取得突破，并一道领略光学设计的科学与艺术之美。通过系统的科研训练，你的做事与创新能力、沟通理解能力，组织能力也会得到不断提升。来了、努力了你就是精英！
+</p>
+<p>
+实验室地址：北京市海淀区 北京理工大学中关村校区7号教学楼313室
+												</p>
+                                                
+<p>                                                
+邮箱：cdwlxk@bit.edu.cn</br>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fzx@bit.edu.cn</br>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yangtong@bit.edu.cn</p>
+
+											</section>
+
+											<section>
+												<h3>实验室位置</h3>
+												                    <td height="50" bgcolor="#FFFFFF">
+                      <!--百度地图容器-->
+  <div style="width:697px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+                    
+                    </td>
+											</section>
+
+										</article>
+
+								</div>
+							</div>
+                            
+                                                       
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+		<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-12">
+
+								<!-- About -->
+									<section>
+										<h2 class="major"><span>北京理工大学 光学成像与计算实验室</span></h2>
+
+									</section>
+
+							</div>
+
+						</div>
+
+						<!-- Copyright -->
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; 2020 BIT Optical Imaging and Computing Lab. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(116.323401,39.964438);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"实验室位置",content:"我的备注",point:"116.323401|39.964438",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
