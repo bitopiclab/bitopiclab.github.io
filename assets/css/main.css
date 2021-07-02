@@ -2514,7 +2514,7 @@ table {
 
 	#banner {
 		position: relative;
-		background-image: url("images/group_wide.jpg"), url("images/group_wide.jpg"), url("../../images/group_wide.jpg");
+		background-image: url("images/groupwide3.jpg"), url("images/groupwide3.jpg"), url("../../images/groupwide3.jpg");
 		background-position: top left, top left, center center;
 		background-repeat: repeat, repeat, no-repeat;
 		background-size: auto, auto, cover;
